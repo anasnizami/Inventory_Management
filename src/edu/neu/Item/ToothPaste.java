@@ -4,8 +4,8 @@ import edu.neu.API.ItemAPI;
 
 public class ToothPaste extends ItemAPI{
 
-	public ToothPaste(int id, String name, String des, double price) {
-		super(id, name, des, price);
+	public ToothPaste(String name, String des, int price) {
+		super(name, des, price);
 	}
 
 }

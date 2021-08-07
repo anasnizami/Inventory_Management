@@ -14,7 +14,6 @@ public class ParameterizedDecorator extends InventoryCartDecorator{
 	private String description;
 	private String name;
 	private double price;
-	private int id;
 	
 	public ParameterizedDecorator(InventoryCartAPI cart,Items_List items) {
 		super(cart);
@@ -33,7 +32,6 @@ public class ParameterizedDecorator extends InventoryCartDecorator{
 	private void getValues(Items_List items) {
 		ItemAPI item = getItemObject(items);
 		this.description = item.getDescription();
-		this.id = item.getId();
 		this.name = item.getName();
 		this.price = item.getPrice();
 	}
@@ -42,10 +40,9 @@ public class ParameterizedDecorator extends InventoryCartDecorator{
 		StringBuilder sb = new StringBuilder();
 		sb.append("Name : ").append(this.name);
 		sb.append(",Description : ").append(this.description);
-		sb.append(",Code : ").append(this.id);
 		sb.append(",Cost = ").append(this.price);
 		
-		return super.getDesc()+ "\n"+ sb.toString();
+		return super.getDesc()+ ", ,"+ sb.toString();
 
 	}
 

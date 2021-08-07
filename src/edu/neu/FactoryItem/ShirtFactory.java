@@ -11,7 +11,7 @@ public class ShirtFactory  extends AbstractFactoryAPI{
 	@Override
 	public ItemAPI getObject() {
 		if(instance == null) {
-			instance = new ToothPaste(3200, "Shirt", "Clothing", 20);
+			instance = new ToothPaste("Shirt", "Clothing", 20);
 		}
 		return instance;
 	}

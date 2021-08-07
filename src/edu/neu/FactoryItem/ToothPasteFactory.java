@@ -11,7 +11,7 @@ public class ToothPasteFactory extends AbstractFactoryAPI{
 	@Override
 	public ItemAPI getObject() {
 		if(instance == null) {
-			instance = new ToothPaste(2100, "Tooth Paste", "Hygiene", 5);
+			instance = new ToothPaste("Tooth Paste", "Hygiene", 5);
 		}
 		return instance;
 	}

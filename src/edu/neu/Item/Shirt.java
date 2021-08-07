@@ -4,8 +4,8 @@ import edu.neu.API.ItemAPI;
 
 public class Shirt extends ItemAPI{
 
-	public Shirt(int id, String name, String des, double price) {
-		super(id, name, des, price);
+	public Shirt(int id, String name, String des, int price) {
+		super(name, des, price);
 	}
 
 }

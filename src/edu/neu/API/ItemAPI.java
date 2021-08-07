@@ -2,8 +2,7 @@ package edu.neu.API;
 
 public class ItemAPI implements Cloneable{
 
-	 	private int id;
-	    private double price;
+	    private int price;
 	    private String name;
 	    private String description;
 
@@ -11,26 +10,17 @@ public class ItemAPI implements Cloneable{
 	        super();
 	    }
 	    
-	    public ItemAPI(int id, String name, String des, double price) {
-	    	this.id = id;
+	    public ItemAPI(String name, String des, int price) {
 	    	this.name = name;
 	    	this.description = des;
 	    	this.price = price;
 	    }
 	    
-	    public int getId() {
-			return this.id;
-		}
-
-		public void setId(int id) {
-			this.id = id;
-		}
-
-		public double getPrice() {
+		public int getPrice() {
 			return price;
 		}
 
-		public void setPrice(double price) {
+		public void setPrice(int price) {
 			this.price = price;
 		}
 
@@ -49,21 +39,6 @@ public class ItemAPI implements Cloneable{
 		public void setDescription(String description) {
 			this.description = description;
 		}
-
-		/**
-	     * return a String representation of the object state
-	     */
-	    @Override
-	    public String toString() {
-	        StringBuilder sb = new StringBuilder();
-	        
-	        sb.append("# ").append(id);
-	        sb.append(" $ ").append(price);
-	        sb.append(" ").append(name);
-	        sb.append(" '").append(description).append("'");
-	        
-	        return sb.toString();
-	    }    
 	    
 	    public Object clone() {
 			Object clone = null;
