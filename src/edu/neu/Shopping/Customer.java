@@ -122,14 +122,14 @@ public class Customer {
 			{	
 				System.out.print("\nEnter Last Name: ");
 				lname = Lname.nextLine();
-				f.read(lname);
+				f.read(lname,1);
 			}else 
 			{
 				i = 2;
 				System.out.print("\nEnter Last Name: ");
 				lname = Lname.nextLine();
 				f.edit_file("Delivered", lname);
-				f.read(lname);
+				f.read(lname,1);
 				System.out.println("EXITING.....");
 			}
 

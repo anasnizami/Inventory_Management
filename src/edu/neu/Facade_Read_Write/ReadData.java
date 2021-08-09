@@ -11,6 +11,11 @@ public class ReadData extends Document {
 	
 	public String path;
 	
+	public ReadData(String path) {
+		super();
+		this.path = path;
+	}
+
 	public String getPath() {
 		return path;
 	}
@@ -29,7 +34,7 @@ public class ReadData extends Document {
 		List<String> lines = Collections.emptyList();
 	    try
 	    {
-	      lines = Files.readAllLines(Paths.get(Document.customer_path), StandardCharsets.UTF_8);
+	      lines = Files.readAllLines(Paths.get(path), StandardCharsets.UTF_8);
 	    }
 	  
 	    catch (IOException e)

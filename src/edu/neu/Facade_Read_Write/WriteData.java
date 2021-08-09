@@ -16,7 +16,7 @@ public class WriteData extends Document {
 	
 	public WriteData(String path) {
 		this.path = path;
-		read = new ReadData();
+		read = new ReadData(path);
 		
 		//Creating a new file
 		try {
@@ -40,8 +40,7 @@ public class WriteData extends Document {
 	@Override
 	public void save(List<String> programData) {
 		//Reading the file to retain the information
-		list = read.load();
-		
+		list = read.load();		
 		
 		StringBuilder content = new StringBuilder();
 		FileOutputStream fileOutputStream;
