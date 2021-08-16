@@ -29,6 +29,7 @@ public class AdminState extends StateAPI{
 			System.err.println("Wrong choice");
 		
 		ch.close();
+		
 	}
 
 	@Override

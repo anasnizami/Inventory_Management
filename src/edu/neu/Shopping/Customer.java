@@ -10,7 +10,7 @@ import edu.neu.Prototype.ParameterizedDecorator;
 
 public class Customer {
 	
-	InventoryCartAPI cart = new AddItems();;
+	InventoryCartAPI cart = new AddItems();
 	String Fname,Lname;
 	int id, age;
 	Facade f = new Facade();
